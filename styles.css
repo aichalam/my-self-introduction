@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffecda, #ffd700); /* Gradient background */
+}
+
+header {
+    background-color: #ff6f61; /* Coral */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    border-bottom: 5px solid #ffd700; /* Gold */
+    transition: background-color 0.5s ease; /* Smooth background color transition */
+}
+
+h1 {
+    margin-bottom: 0;
+    font-family: 'Pacifico', cursive;
+    animation: colorChange 3s infinite alternate; /* Dynamic color change for the title */
+}
+
+@keyframes colorChange {
+    from {
+        color: #ff6f61; /* Coral */
+    }
+    to {
+        color: #ffd700; /* Gold */
+    }
+}
+
+img {
+    border-radius: 15px;
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* Smooth transform transition */
+}
+
+.img-puzzle {
+    cursor: pointer;
+    filter: grayscale(100%); /* Convert puzzle pieces to grayscale */
+}
+
+.img-puzzle:hover {
+    filter: none; /* Revert to full color on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.intro, .best-moments, footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #444; /* Dark Gray */
+}
+
+.intro p, .best-moments p, footer p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    outline: none; /* Remove default outline on video focus */
+}
+
+.best-moments {
+    background-color: #ffecda; /* Light Coral */
+}
+
+.best-moments h2 {
+    font-family: 'Pacifico', cursive;
+    color: #ff6f61; /* Coral */
+    margin-bottom: 20px;
+}
+
+.photo-collage {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo {
+    margin: 10px;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.5s ease; /* Smooth transform transition */
+}
+
+.photo p {
+    font-size: 1em;
+    color: #444; /* Dark Gray */
+    margin-top: 10px;
+}
+
+.photo img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+footer {
+    background-color: #ffd700; /* Gold */
+    color: #fff;
+    border-top: 5px solid #ff6f61; /* Coral */
+}
+
+.instagram-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.instagram-link img {
+    border-radius: 50%;
+    border: 2px solid #ff6f61; /* Coral */
+    transition: transform 0.5s ease; /* Smooth transform transition */
+}
+
+.instagram-link img:hover {
+    transform: rotate(360deg); /* Rotate on hover */
+}
+
+.instagram-link p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #444; /* Dark Gray */
+}
+
+.instagram-link a {
+    color: #ff6f61; /* Coral */
+    text-decoration: none;
+    font-weight: bold;
+}
+
